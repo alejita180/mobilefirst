@@ -375,7 +375,7 @@ main {
 .main-plans-container {
   width: 100%;
   min-width: 320px;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
   text-align: center;
 }
 
@@ -405,11 +405,12 @@ main {
 
 .plans-container--slider {
   display: flex;
-  height: 316px;
+  height: 400px; /*anteriormente era 316*/
   overflow-x: scroll;
   /* overflow-y: hidden; */
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  padding: 0 50px 0 25px;
 }
 
 .plans-container--card {
@@ -418,7 +419,7 @@ main {
   width: 70%;
   min-width: 230px;
   max-width: 300px;
-  height: 250px;
+  height: 295px;
   margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--white);
