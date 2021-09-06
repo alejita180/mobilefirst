@@ -405,21 +405,22 @@ main {
 
 .plans-container--slider {
   display: flex;
-  height: 400px; /*anteriormente era 316*/
+  min-height: 316px; /*anteriormente era 316*/
   overflow-x: scroll;
   /* overflow-y: hidden; */
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  padding: 0 50px 0 25px;
+  padding: 0 25px 50px 25px;
+  /* margin-bottom: 50px; */
 }
 
 .plans-container--card {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px; /*antes 230px*/
   max-width: 300px;
-  height: 295px;
+  height: 250px; /*antes 295px*/
   margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--white);
@@ -513,4 +514,34 @@ main {
   background-color: var(--warm-black);
   border-radius: 8px;
   color: var(--bitcoin-orange);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+footer .left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--white);
 }
